@@ -5,42 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Gorjetas</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header>    
-        <h1>Calculadora de Gorjetas Online</h1>
-        <p> Calcule quanto dar de gratificação pelo serviço recebido </p>
+    <header>   
+        <div class="titulo">
+            <h1>CALCULADORA DE GORJETAS ONLINE</h1>
+        </div> 
+        <h3> Este calculo demonstra quanto de gratificação oferecer por um serviço  </h3>
     </header>
 
-
     <main>
-        <section>   
-                <h2>Calculadora de Gorjetas</h2>
-                <div>
-                    <form>
-                        <label for="valorConta">Valor da conta:</label>
-                        <input type="number" id="valorConta" name="valorConta" >
-                        <br>
+        <section>  
+            <h2>Calculadora de Gorjetas</h2>
+             <form>
+                    <div id="formulario">
+                        <label>Valor da conta:</label>
+                        <input type="text" id="valorConta" name="valorConta" >
 
-                        <label for="porcGorgeta">Porcentagem da gorgeta: </label>
-                        <input type="number" id="porcGorgeta" name="porcGorgeta">
-                        <br>
-
-                        <label for="numPessoas">Numero de pessoas:</label>
-                        <input type="number" id="numPessoas" name="numPessoas">
-                        <br>
-
-                        <button> Calcular </button>
+                        <label>Porcentagem da gorgeta: </label>
+                        <input type="text" id="porcGorgeta" name="porcGorgeta">
                     </form>
-                </div>
-                <div>
+                    </div>
+            
+            
+                <div class="resultado">
                     <h3>Resultado</h3>
                     <p>Gorjea por pessoa: </p><br>
                     <p>Total por pessoa</p><br>
                     <p>Total a pagar</p><br>
                 </div>
                 
-                <div>
+                <div class="comoCalcular">
                     <h2>Como calcular gorjetas</h2>
                     <h3>Exemplo</h3>
 
@@ -65,8 +61,6 @@
     </main>
 
 
-    <footer
-    
-    ></footer>
+    <footer> </footer>
 </body>
 </html>
