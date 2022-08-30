@@ -18,11 +18,11 @@
             <div class="form">
                     <div class="formulario">
                         <label id="labelValorConta">Valor da conta:</label>
-                        <input type="number" id="valorConta" name="valorConta"  step="0.01" placeholder="R$ 0,00" >
+                        <input type="text" id="valorConta" name="valorConta"  step="0.01" placeholder="R$ 0,00" >
                     </div>
                     <div class="formulario">
                         <label id="labelPorcGorgeta">Porcentagem da gorgeta: </label>
-                        <input type="text" id="porcGorgeta" name="porcGorgeta" step="0.01" placeholder="R$ 0,00">
+                        <input type="text" id="porcGorgeta" name="porcGorgeta" step="0.01" placeholder="R$ 0,00" min="1">
                     </div>
                     <div class="formulario" id="num">
                         <label id="labelNumPessoas"> Numero de pessoas: </label>
@@ -31,12 +31,11 @@
                     <div class="formulario" id="botao"> 
                         <button id="limpar">Limpar</button>
                         <button id="btnCalcular">Calcular</button>
-                       
-
                     </div>
             </div>
+
                 <div class="resultado">
-                    <h3>Resultado</h3>
+                    <h3 id="result">Resultado</h3>
                     <p>Gorjea por pessoa: </p><br>
                     <p>Total por pessoa</p><br>
                     <p>Total a pagar</p><br>
