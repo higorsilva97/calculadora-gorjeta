@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Gorjetas</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <header class="header">   
             <h1>CALCULADORA DE GORJETAS ONLINE</h1>
-            <h3> Este calculo demonstra quanto de gratificação oferecer por um serviço  </h3>
+            <h3> Este cálculo demonstra quanto de gratificação oferecer por um serviço. </h3>
     </header>
 
         <section>  
@@ -21,11 +21,11 @@
                         <input type="text" id="valorConta" name="valorConta"  step="0.01" placeholder="R$ 0,00" >
                     </div>
                     <div class="formulario">
-                        <label id="labelPorcGorgeta">Porcentagem da gorgeta: </label>
+                        <label id="labelPorcGorgeta">Porcentagem da gorjeta: </label>
                         <input type="text" id="porcGorgeta" name="porcGorgeta" step="0.01" placeholder="R$ 0,00" min="1">
                     </div>
                     <div class="formulario" id="num">
-                        <label id="labelNumPessoas"> Numero de pessoas: </label>
+                        <label id="labelNumPessoas"> Número de pessoas: </label>
                         <input type="number"name="numPessoas" id="numPessoas" placeholder="1">
                     </div>
                     <div class="formulario" id="botao"> 
@@ -35,31 +35,33 @@
             </div>
 
                 <div class="resultado">
-                    <h3 id="result">Resultado</h3>
-                    <p>Gorjea por pessoa: </p><br>
-                    <p>Total por pessoa</p><br>
-                    <p>Total a pagar</p><br>
-                </div>
-                
-                <div class="comoCalcular">
-                    <h2>Como calcular gorjetas</h2>
-                    <h3>Exemplo</h3>
-
-                    <p> Para calcular uma gorgeta de 10% para uma conta de R$ 60,00? </p>
-                    <p> Formula utilizada para calcular a gorjeta </p>
-                    <p> Valor da gorjeta = Valor da conta x Porcentagem da gorgeta / 100</p>
-                    <p> Total a pagar = Valor da conta + valor da gorgeta</p>
-
-                    <h3>Substituindo os valores, temos: </h3>
-                    <p>Valor da gorjeta = R$ 60,00 x 10% / 100</p>
-                    <p>Valor da gorjeta = 600 / 100 = R$ 6</p>
-                    <h4> Total a pagar sera: </h4>
-                    <p> Total a pagar = Valor da conta + valor da gorgeta</p>
-                    <p> Total a pagar = R$ 60,00 + R$ 6,00 = R$ 66,00</p>
-
-
-
+                    <h3 id="result">Resultado: </h3>
+                    <h3>Gorjetas por pessoas: </h3>
+                    <h3>Total por pessoas: </h3>
+                    <h3>Total a pagar: </h3>   
                 </div>
         </section>
+        <div class="comoCalcular">
+            <h2>Como calcular gorjetas?</h2>
+            <h3>Exemplo:</h3>
+
+            <p> Para calcular uma gorgeta de 10% para uma conta de R$ 60,00? </p>
+            <p> Fórmula utilizada para calcular a gorjeta:</p>
+            <p> Valor da gorjeta = Valor da conta x Porcentagem da gorjeta / 100</p>
+            <p> Total a pagar = Valor da conta + valor da gorjeta</p>
+
+            <h3>Substituindo os valores, temos: </h3>
+            <p>Valor da gorjeta = R$ 60,00 x 10% / 100</p>
+            <p>Valor da gorjeta = 600 / 100 = R$ 6</p>
+            <h3> Total a pagar será: </h3>
+            <p> Total a pagar = Valor da conta + valor da gorjeta</p>
+            <p> Total a pagar = R$ 60,00 + R$ 6,00 = R$ 66,00</p>
+        </div>
+
+        <footer>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptates a rem animi placeat voluptatibus praesentium dolores cumque ipsa repellat dolore obcaecati dolorem corporis tempore ea dolor, qui beatae. Exercitationem?</p>
+        </footer>
+
+        <script src="js/index.js"></script>
 </body>
 </html>

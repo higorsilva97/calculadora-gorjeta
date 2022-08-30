@@ -1,8 +1,8 @@
 *{
     box-sizing: border-box;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
 
+}
 
 input[type="number"] {
     -moz-appearance: textfield;
@@ -26,8 +26,8 @@ h1{
 section{
     margin-left: 30%;
     margin-top: 80px;
-    border: 2px solid rgb(228, 247, 255);
-    border-radius: 10px;
+    border: 3px solid rgb(228, 247, 255);
+    border-radius: 20px;
     width: 40%;
     text-align: center;
     
@@ -40,7 +40,7 @@ h2{
 
 .form{
    margin-left: 50px;
-   border: 1px solid black;
+   
 }
 .formulario{
     display: inline-block;
@@ -112,10 +112,37 @@ label{
 }
 
 .resultado{
-    border: 1px solid black;
+
     margin-left: 50px;
+    font-size: 20px;
+    text-align: left;
 }
 
-h3{
-    
+#result{
+    font-size: 30px;
+    text-align: left;
+}
+
+.comoCalcular{
+    border: 3px solid rgb(228, 247, 255);
+    margin-left: 30%;
+    width: 40%;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.comoCalcular h3{
+    margin-left: 30px;
+}
+
+p{
+    margin-left: 30px;
+}
+
+footer{
+    background-color: rgb(228, 247, 255);
+    height: 100px;
+    margin-top:20px;
+    text-align: center;
+    padding-top: 10px;
 }
