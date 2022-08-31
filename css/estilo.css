@@ -30,6 +30,7 @@ section{
     border-radius: 20px;
     width: 40%;
     text-align: center;
+    padding-bottom: 40px;
     
 }
 
@@ -47,14 +48,13 @@ h2{
     width: 350px;
     height: 80px;
     text-align: left;
-   /* border: 2px solid black;*/
+
     
 }
 
 #num {
-    display:block;
-    margin-left: 178px;
-    margin-top: 15px;
+    display:inline-block
+    
 }
 #botao{
     display: inline-block;
@@ -71,7 +71,7 @@ button{
     font-weight: bold;
     color: white;
     margin-top: 15px;
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 button:hover{
@@ -146,3 +146,4 @@ footer{
     text-align: center;
     padding-top: 10px;
 }
+

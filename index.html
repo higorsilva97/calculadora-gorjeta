@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Gorjetas</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="imagens\favicons\icons8-gorjeta-color-16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="imagens\favicons\icons8-gorjeta-color-32.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="imagens\favicons\icons8-gorjeta-color-96.png">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
@@ -18,23 +21,23 @@
             <div class="form">
                     <div class="formulario">
                         <label for="valorConta" id="labelValorConta">Valor da conta:</label>
-                        <input type="text" id="valorConta" name="valorConta"  step="0.01" placeholder="R$ 0,00" >
+                        <input type="text" id="valorConta" name="valorConta"  step="0.01" placeholder="R$ 0,00" value="">
                     </div>
                     <div class="formulario">
                         <label for="porcGorjeta" id="labelPorcGorjeta">Porcentagem da gorjeta: </label>
-                        <input type="text" id="porcGorjeta" name="porcGorjeta" step="0.01" placeholder="%" min="1">
+                        <input type="text" id="porcGorjeta" name="porcGorjeta" step="0.01" placeholder="%" min="" value="">
                     </div>
                     <div class="formulario" id="num">
                         <label for="numPessoas" id="labelNumPessoas"> Número de pessoas: </label>
-                        <input type="number"name="numPessoas" id="numPessoas" placeholder="1">
+                        <input type="number"name="numPessoas" id="numPessoas" placeholder="" value="1" min="1">
                     </div>
                     <div class="formulario" id="botao"> 
-                        <button id="limpar">Limpar</button>
+                        <button id="limpar" onclick="limpar()">Limpar</button>
                         <button id="btnCalcular" onclick="calcular()">Calcular</button>
                     </div>
             </div>
 
-                <div class="resultado">
+                <div class="resultado" id="resultados">
                     <h3 id="result">Resultado: </h3>
                     <h3>Gorjetas por pessoas: </h3>
                     <h3>Total por pessoas: </h3>
