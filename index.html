@@ -8,6 +8,7 @@
     <link type="image/png" sizes="16x16" rel="icon" href="imagens\favicons\icons8-gorjeta-color-16.png">
     <link type="image/png" sizes="32x32" rel="icon" href="imagens\favicons\icons8-gorjeta-color-32.png">
     <link type="image/png" sizes="96x96" rel="icon" href="imagens\favicons\icons8-gorjeta-color-96.png">
+
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
@@ -21,15 +22,15 @@
             <div class="form">
                     <div class="formulario">
                         <label for="valorConta" id="labelValorConta">Valor da conta:</label>
-                        <input type="text" id="valorConta" name="valorConta"  step="0.01" placeholder="R$ 0,00" value="">
+                        <input type="number" id="valorConta" name="valorConta"  step="0.01" min="0.1" placeholder="R$">
                     </div>
                     <div class="formulario">
                         <label for="porcGorjeta" id="labelPorcGorjeta">Porcentagem da gorjeta: </label>
-                        <input type="text" id="porcGorjeta" name="porcGorjeta" step="0.01" placeholder="%" min="" value="">
+                        <input type="number" id="porcGorjeta" name="porcGorjeta" step="0.01" min="1" max="100" value="" placeholder="%">
                     </div>
                     <div class="formulario" id="num">
                         <label for="numPessoas" id="labelNumPessoas"> Número de pessoas: </label>
-                        <input type="number"name="numPessoas" id="numPessoas" placeholder="" value="1" min="1">
+                        <input type="number" name="numPessoas" id="numPessoas" value="" min="1" >
                     </div>
                     <div class="formulario" id="botao"> 
                         <button id="limpar" onclick="limpar()">Limpar</button>
@@ -48,17 +49,17 @@
             <h2>Como calcular gorjetas?</h2>
             <h3>Exemplo:</h3>
 
-            <p> Para calcular uma gorgeta de 10% para uma conta de R$ 60,00? </p>
+            <p> Para calcular uma gorgeta de 10% para uma conta de R$ 100,00? </p>
             <p> Fórmula utilizada para calcular a gorjeta:</p>
             <p> Valor da gorjeta = Valor da conta x Porcentagem da gorjeta / 100</p>
             <p> Total a pagar = Valor da conta + valor da gorjeta</p>
 
             <h3>Substituindo os valores, temos: </h3>
-            <p>Valor da gorjeta = R$ 60,00 x 10% / 100</p>
-            <p>Valor da gorjeta = 600 / 100 = R$ 6</p>
+            <p>Valor da gorjeta = R$ 100,00 x 10% / 100</p>
+            <p>Valor da gorjeta = 1000 / 100 = R$ 10</p>
             <h3> Total a pagar será: </h3>
             <p> Total a pagar = Valor da conta + valor da gorjeta</p>
-            <p> Total a pagar = R$ 60,00 + R$ 6,00 = R$ 66,00</p>
+            <p> Total a pagar = R$ 100,00 + R$ 10,00 = R$ 110,00</p>
         </div>
 
         <footer>
